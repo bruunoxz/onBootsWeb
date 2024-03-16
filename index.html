@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 </head>
-<body>
+<body onload="adicionarLinha()">
     <header class="header">
             <img src="style/Logo.png" alt="" class="logo">
     </header>
     <main>
         <h1><strong>Encomendas</strong></h1>
 
-        <table border="1">
+        <table border="1" id="tabelaProdutos">
     <tr>
         <th>Nome</th>
         <th>Produto</th>
@@ -26,7 +26,7 @@
         <td>Luis Artur</td>
         <td>Adidas Campus 00s Black White</td>
         <td>1</td>
-        <td>699.99</td>
+        <td>699.99</td> 
         <td></td>
     </tr>
     <tr class="cliente">
@@ -64,11 +64,11 @@
                     <select id="produto">
                         <option value="" disabled selected>Selecione um produto</option>
                         <option value="Air Force 1 White">Air Force 1 White</option>
-                        <option value="Puma Suede XL Red">Pumxa Suede XL Red</option>
+                        <option value="Puma Suede XL Red">Puma Suede XL Red</option>
                         <option value="Puma 180 White">Puma 180 White</option>
                         <option value="Puma 180 Black">Puma 180 Black</option>
                         <option value="Adidas Campus 00s Black White">Adidas Campus 00s Black White</option>
-                        <option value="Qix Hexagon Preto">Qix Hexagon Preto</option> 
+                        <option value="Qix Hexagon Black">Qix Hexagon Black</option> 
                     </select>
                 </div>
 
@@ -77,15 +77,12 @@
                     <input type="number" id="quantidade" placeholder="Digite a quantidade desejada">
                 </div>
 
-                <div>
-                    <label for="valor">R$:</label>
-                    <input type="number" id="valor" placeholder="Digite o valor do seu produto">
-                </div>  
                 
-                <button type="submit">Adicionar</button>
+                <button type="button" id="adicionar">Adicionar</button>
         </form>
     </div>
     </main>
-    <script src="script.js"></script>
+    <script src="scripts/exibir.js"></script>
+    <script src="scripts/adicionar.js"></script>
 </body>
 </html>
