@@ -6,7 +6,8 @@ function adicionarLinha(){
         var quantidade = document.getElementById("quantidade").value;
 
 
-        if(validarQuantidade()){
+
+        if(validarQuantidade(quantidade) && validarNome(nome)){
             switch(produto){
                 case "Air Force 1 White":
                     let af1White = quantidade * 799.99
@@ -42,7 +43,7 @@ function adicionarLinha(){
 
             var tabela = document.getElementById("tabelaProdutos");
             var novaLinha = document.createElement("tr");
-
+            
 
             novaLinha.innerHTML = `
                     <td>${nome}</td>
@@ -52,10 +53,34 @@ function adicionarLinha(){
                     <td>${total}</td>
                     `
             
+
+            novaLinha.addEventListener("dblclick", function() {
+                        apagarLinha(this);
+                    });
+                    
             tabela.appendChild(novaLinha);
-        }else{
+        }else if(validarNome(nome) && !(validarQuantidade(quantidade))){
             var mensagemErro = "<p class='erro'>Quantidade inválida</p>";
+            document.querySelector('.novaEncomenda').insertAdjacentHTML('afterend', mensagemErro);
+        }else if(validarQuantidade(quantidade) && !(validarNome(nome))){
+            var mensagemErro = "<p class='erro'>Nome inválido</p>";
             document.querySelector('.novaEncomenda').insertAdjacentHTML('afterend', mensagemErro);
         }
     });
+}
+
+function validarQuantidade(quantidade){
+    if(quantidade<1 || isNaN(quantidade)){
+        return false;
+    }else{
+        return true;
+    }
+}
+
+function validarNome(nome){
+    if(nome==""){
+        return false;
+    }else{
+        return true;
+    }
 }
