@@ -13,38 +13,39 @@
     </header>
     <main>
         <h1><strong>Encomendas</strong></h1>
-
+        <label for="filtraTabela">Filtrar</label>
+        <input type="text" id="filtrar-tabela" placeholder="Digite o nome do cliente">
         <table border="1" id="tabelaProdutos">
     <tr>
-        <th>Nome</th>
+        <th class="info-nome">Nome</th>
         <th>Produto</th>
         <th class="info-qtd">Quantidade</th>
         <th class="info-unitario">Valor Unitário</th>
         <th class-="info-total">Total</th>
     </tr>
     <tr class="cliente" ondblclick="apagarLinha(this)">
-        <td>Luis Artur</td>
+        <td class="info-nome">Luis Artur</td>
         <td>Adidas Campus 00s Black White</td>
         <td>1</td>
         <td>699.99</td> 
         <td></td>
     </tr>
     <tr class="cliente" ondblclick="apagarLinha(this)">
-        <td>Laura Guimaraes</td>
+        <td class="info-nome">Laura Guimaraes</td>
         <td>Puma 180 White, Puma 180 Black</td>
         <td>2</td>
         <td>699.99</td>
         <td></td>
     </tr>
     <tr class="cliente" ondblclick="apagarLinha(this)">
-        <td>Enzo Gabriel</td>
+        <td class="info-nome">Enzo Gabriel</td>
         <td>Air Force 1 White</td>
         <td>3</td>
         <td>799.99</td>
         <td></td>
     </tr>
     <tr class="cliente" ondblclick="apagarLinha(this)">
-        <td>Pedro Lucas</td>
+        <td class="info-nome">Pedro Lucas</td>
         <td>Puma Suede XL Red</td>
         <td>1</td>
         <td>549.90</td>
@@ -83,6 +84,7 @@
     </div>
     </main>
     <script src="scripts/exibir.js"></script>
+    <script src="scripts/filtrar.js"></script>
     <script src="scripts/adicionar.js"></script>
 </body>
 </html>
