@@ -54,6 +54,7 @@ function calcularTotal(quantidade, valorUnitario){
     return quantidade * valorUnitario
 }
 
+
 function apagarLinha(elemento) {
     elemento.parentNode.removeChild(elemento);
 }
