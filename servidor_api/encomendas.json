@@ -1,0 +1,39 @@
+{
+    "encomendas": [
+        {
+            "info-nome": "Bruno Macedo",
+            "info-produto": "Air Jordan Chicago",
+            "info-qtd": 1,
+            "info-unitario": 892.99,
+            "info-total": 892.99
+        },
+        {
+            "info-nome": "Fabricio Romano",
+            "info-produto": "Adidas Forum Low Royal",
+            "info-qtd": 2,
+            "info-unitario": 799.99,
+            "info-total": 1599.98
+        },
+        {
+            "info-nome": "Mauricio Santos",
+            "info-produto": "Air Max 90 Preto",
+            "info-qtd": 1,
+            "info-unitario": 749.99,
+            "info-total": 749.99
+        },
+        {
+            "info-nome": "Livia Santana",
+            "info-produto": "New Balance 9060 Sea Salt",
+            "info-qtd": 1,
+            "info-unitario": 1199.99,
+            "info-total": 1199.99
+        },
+        {
+            "info-nome": "Stephany Santiago",
+            "info-produto": "Reebok Club C 85",
+            "info-qtd": 4,
+            "info-unitario": 499.99,
+            "info-total": 1999.96
+        }
+    ]
+}
