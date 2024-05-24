@@ -10,9 +10,10 @@ botaoBuscar.addEventListener("click", function(){
         encomendas.forEach(function(cada_encomenda){
             var tabela = document.getElementById("tabelaProdutos");
             var novaLinha = document.createElement("tr");
-            
+            novaLinha.classList.add("cliente");
+
             novaLinha.innerHTML = `
-                <td>${cada_encomenda["info-nome"]}</td>
+                <td class="info-nome">${cada_encomenda["info-nome"]}</td>
                 <td>${cada_encomenda["info-produto"]}</td>
                 <td>${cada_encomenda["info-qtd"]}</td>
                 <td>${formatarValor(cada_encomenda["info-unitario"])}</td>

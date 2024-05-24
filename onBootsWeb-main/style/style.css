@@ -70,6 +70,10 @@ button:hover {
     margin-bottom: 10px;
 }
 
+#cepInput{
+    width: 21.3%;
+}
+
 .invisivel{
     display: none;
 }
